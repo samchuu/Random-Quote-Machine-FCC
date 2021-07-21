@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Quotes from "./data";
+import "./styles.css";
+import BoxQuote from "./components/BoxQuote";
+import Colors from "./colors";
 
 function App() {
+  const [allQuotes, setAllQuotes] = useState(Quotes());
+  const [allRandomColor, setAllRandomColor] = useState(Colors());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BoxQuote
+        allQuotes={allQuotes}
+        setQuotes={setAllQuotes}
+        allRandomColor={allRandomColor}
+        setRandomColor={setAllRandomColor}
+      />
     </div>
   );
 }
