@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faTumblr } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function BoxQuote({ allQuotes, allRandomColor }) {
   //quotes
-  const randomQuotes = allQuotes[Math.floor(Math.random() * 4)];
+  const randomQuotes = allQuotes[Math.floor(Math.random() * allQuotes.length)];
   const [random, setRandom] = useState(randomQuotes);
 
   const newQuoteHandler = () => {
     //to run another quote
-    const randomQuotes = allQuotes[Math.floor(Math.random() * 4)];
+    const randomQuotes =
+      allQuotes[Math.floor(Math.random() * allQuotes.length)];
     setRandom(randomQuotes);
   };
 
   //colors
-  const randomColors = allRandomColor[Math.floor(Math.random() * 6)];
+  const randomColors =
+    allRandomColor[Math.floor(Math.random() * allRandomColor.length)];
   const divStyle = {
     backgroundColor: randomColors.color,
     transition: "0.3s all ease-in",
@@ -28,6 +30,8 @@ function BoxQuote({ allQuotes, allRandomColor }) {
   return (
     <div>
       <div id="quote-box" style={divStyle}>
+        <h1>Random Quote Machine</h1>
+
         <div className="box">
           <div className="texts">
             <h2 id="text" style={textStyle}>
@@ -49,13 +53,24 @@ function BoxQuote({ allQuotes, allRandomColor }) {
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a style={divStyle} href="/tumblr" className="tumblr">
-              <FontAwesomeIcon icon={faTumblr} />
+
+            <a
+              style={divStyle}
+              target="_blank"
+              href="//www.instagram.com"
+              className="instagram"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             <button style={divStyle} onClick={newQuoteHandler} id="new-quote">
-              New Quote
+              Generate
             </button>
           </div>
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg"
+            alt="fcc"
+            className="fcc"
+          />
         </div>
       </div>
     </div>

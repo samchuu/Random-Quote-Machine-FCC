@@ -1,4 +1,4 @@
-function Colors() {
+function generateColors() {
   return [
     {
       color: "#2C3D50",
@@ -24,4 +24,4 @@ function Colors() {
   ];
 }
 
-export default Colors;
+export default generateColors;
