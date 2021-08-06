@@ -58,6 +58,7 @@ function BoxQuote({ allQuotes, allRandomColor }) {
               style={divStyle}
               target="_blank"
               href="//www.instagram.com"
+              rel="noopener noreferrer"
               className="instagram"
             >
               <FontAwesomeIcon icon={faInstagram} />
