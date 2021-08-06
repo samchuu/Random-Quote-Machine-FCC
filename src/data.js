@@ -37,11 +37,7 @@ function Quotes() {
       author: "- Buddha",
       id: uuidv4(),
     },
-    {
-      text: "If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.",
-      author: "- Vincent Van Gogh",
-      id: uuidv4(),
-    },
+
     {
       text: "Fall seven times and stand up eight.",
       author: "- Japanese Proverb",

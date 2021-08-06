@@ -62,7 +62,7 @@ h2 {
 
 #author {
   position: absolute;
-  top: 170px;
+  top: 180px;
   left: 45px;
 }
 p {
@@ -86,7 +86,6 @@ p {
   margin-left: 5px;
 }
 .texts {
-  /* border: 1px solid black; */
   margin: 1.5rem auto;
   text-align: center;
   height: 140px;
