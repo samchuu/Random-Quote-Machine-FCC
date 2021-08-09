@@ -3,28 +3,28 @@ import { v4 as uuidv4 } from "uuid";
 function Quotes() {
   return [
     {
-      text: "Life is 10% what happens to me and 90% of how I react to it.",
-      author: "- Charles Swindoll",
+      text: "The person who says it cannot be done should not interrupt the person who is doing it",
+      author: "- Chinese Proverb",
       id: uuidv4(),
     },
     {
-      text: "Life shrinks or expands in proportion to one’s courage.",
-      author: "- Anais Nin",
+      text: "An unexamined life is not worth living.",
+      author: "- Socrates",
       id: uuidv4(),
     },
     {
-      text: "The most difficult thing is the decision to act, the rest is merely tenacity.",
-      author: "- Amelia Earhart",
+      text: "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+      author: "- Maya Angelou",
       id: uuidv4(),
     },
     {
-      text: "Every strike brings me closer to the next home run.",
-      author: "- Babe Ruth",
+      text: "Teach thy tongue to say, “I do not know,” and thous shalt progress.",
+      author: "- Maimonides",
       id: uuidv4(),
     },
     {
-      text: "It does not matter how slowly you go as long as you do not stop.",
-      author: "- Confucius",
+      text: "If you do what you’ve always done, you’ll get what you’ve always gotten.",
+      author: "- Tony Robbins",
       id: uuidv4(),
     },
     {
